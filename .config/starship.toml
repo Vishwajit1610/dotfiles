@@ -1,0 +1,32 @@
+add_newline = true
+
+format = """
+$directory$git_branch$git_status$cmd_duration
+$character
+"""
+
+[directory]
+format = "[ $path ]($style)"
+style = "bg:#2a2b3c fg:#89b4fa"
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+format = "[  $branch ]($style)"
+style = "bg:#45475a fg:#a6e3a1"
+
+[git_status]
+format = "[$all_status ]($style)"
+style = "bg:#45475a fg:#f38ba8"
+
+[cmd_duration]
+min_time = 500
+format = "[ 󰔛 $duration ]($style)"
+style = "bg:#585b70 fg:#f9e2af"
+
+[character]
+success_symbol = "[❯](bold #a6e3a1)"
+error_symbol = "[❯](bold #f38ba8)"
+
+
+

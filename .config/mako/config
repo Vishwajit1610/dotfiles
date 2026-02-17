@@ -1,0 +1,33 @@
+# Position & behavior
+anchor=top-right
+margin=10
+padding=12
+border-size=2
+border-radius=8
+max-visible=3
+default-timeout=5000
+ignore-timeout=1
+outer-margin=10
+
+# Font
+font=JetBrainsMono Nerd Font 12
+
+# Colors (dark modern theme)
+background-color=#1e1e2e99
+text-color=#cdd6f4
+border-color=#89b4fa
+
+# Progress bars
+progress-color=over #313244
+
+# Urgency styling
+[urgency=low]
+border-color=#89b4fa
+
+[urgency=normal]
+border-color=#a6e3a1
+
+[urgency=critical]
+border-color=#f38ba8
+default-timeout=0
+
