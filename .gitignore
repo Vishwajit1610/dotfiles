@@ -1,4 +1,5 @@
 *.log
 *.swp
 *.tmp
-
+.config/tmux/plugins/
+.config/yazi/flavors
