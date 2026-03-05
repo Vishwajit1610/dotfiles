@@ -1,0 +1,29 @@
+
+set selection-clipboard clipboard
+
+# Smooth scrolling
+set smooth-scroll true
+
+# Page padding
+set page-padding 4
+
+# Recolor PDFs (great for dark themes)
+# set recolor true
+# set recolor-darkcolor "#ebdbb2"
+# set recolor-lightcolor "#282828"
+
+# Default zoom
+set zoom-step 10
+
+# Show status bar
+set statusbar-h-padding 6
+set statusbar-v-padding 3
+
+# Open document centered
+set adjust-open width
+
+# Vim-style scrolling
+map J scroll down
+map K scroll up
+map H navigate previous
+map L navigate next
