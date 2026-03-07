@@ -27,6 +27,10 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# Alias for downloading using yt-dlp
+alias ytv='yt-dlp'
+alias yta='yt-dlp --config-location ~/.config/yt-dlp/audio.conf'
+
 # zsh-autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
