@@ -3,3 +3,5 @@
 *.tmp
 .config/tmux/plugins/
 .config/yazi/flavors
+.config/yt-dlp/music_archive.txt
+.config/yt-dlp/archive.txt
