@@ -1,0 +1,13 @@
+-f "bv*[height<=1080]+ba/b[height<=1080]"
+-P ~/Videos/Memes
+-o "%(uploader)s - %(title)s [%(id)s].%(ext)s"
+--embed-metadata
+--sub-langs "en.*"
+--write-subs
+--convert-subs srt
+--embed-subs
+--merge-output-format mp4
+--download-archive ~/.config/yt-dlp/archive.txt
+--continue
+--retries 10
+--fragment-retries 10
