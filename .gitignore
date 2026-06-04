@@ -1,7 +1,6 @@
 *.log
 *.swp
 *.tmp
-.config/tmux/plugins/
-.config/yazi/flavors
-.config/yt-dlp/music_archive.txt
-.config/yt-dlp/archive.txt
+terminal-utils/.config/tmux/plugins/
+terminal-utils/.config/yazi/flavors/
+terminal-utils/.config/yt-dlp/*archive.txt

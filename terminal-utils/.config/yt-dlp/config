@@ -3,7 +3,6 @@
 -o "%(uploader)s - %(title)s [%(id)s].%(ext)s"
 --embed-metadata
 --sub-langs "en.*"
---write-subs
 --convert-subs srt
 --embed-subs
 --merge-output-format mp4
