@@ -1,6 +1,6 @@
 /* --- Global Styles --- */
 * {
-  font-family: 'SF Pro Text', 'Inter', 'Segoe UI, NotoSans Nerd Font', sans-serif;
+  font-family: JetBrainsMono Nerd Font Propo;
   font-size: 13px;
   min-height: 0;
   padding-right: 0px;
@@ -48,18 +48,6 @@
 }
 
 #window:hover {
-  background-color: rgb(41, 42, 53);
-}
-
-#custom-music {
-  background-color: #1a1b26;
-  padding: 0.3rem 0.7rem;
-  margin: 5px 10px 5px 5px;
-  border-radius: 6px;
-  color: #babbf1;
-}
-
-#custom-music:hover {
   background-color: rgb(41, 42, 53);
 }
 
@@ -205,6 +193,7 @@
 }
 
 #network {
+  margin-left: 10px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   color: #c6d0f5;
@@ -244,14 +233,56 @@
   border-radius: 6px;
 }
 
+
 /* --- Tooltip Styles --- */
 tooltip {
   background-color: #1a1b26;
   color: #dddddd;
-  padding: 5px 12px;
+  padding: 10px 15px;
   margin: 5px 0px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  font-size: 12px;
+  font-size: 15px;
 }
+
+tooltip label {
+  color: #dddddd;
+}
+
+tooltip calendar {
+  color: #dddddd;
+}
+
+#custom-media-animation,
+#custom-media-now-playing,
+#custom-media-time {
+  background-color: #1a1b26;
+  padding: 0.3rem 0.4rem;
+  margin: 5px 0px;
+}
+
+#custom-media-animation {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  color: #99d1db;
+  padding-left: 0.7rem;
+}
+
+#custom-media-now-playing {
+  color: #c6d0f5;
+}
+
+#custom-media-time {
+  color: #888888;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding-right: 0.7rem;
+}
+
+#custom-media-animation:hover,
+#custom-media-now-playing:hover,
+#custom-media-time:hover {
+  background-color: rgb(41, 42, 53);
+}
+

@@ -11,7 +11,7 @@
   "modules-center": ["clock"],
 
   "modules-right": [
-    "custom/music",
+    "group/media",
     "network",
     "bluetooth",
     "pulseaudio",
@@ -39,7 +39,7 @@
   },
 
   "tray": {
-      "spacing": 8
+      "spacing": 15
   },
 
   "hyprland/window": {
@@ -62,22 +62,65 @@
     "tooltip-format-connected":"{device_enumerate}"
   },
 
-  "custom/music": {
-    "format": "🎼  {}",
-    "escape": true,
-    "interval": 5,
-    "tooltip": false,
-    "exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
+"mpris": {
+    "format": "{player_icon} {dynamic}",
+    "dynamic-order": ["title", "artist"],
+    "dynamic-len": 35,
+    "player-icons": {
+        "spotify": "",
+        "firefox": "󰈹",
+        "default": "🎵"
+    },
+    "status-icons": {
+        "paused": "⏸"
+    },
     "on-click": "playerctl play-pause",
-    "max-length": 50
-  },
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "tooltip": true
+},
 
-  "clock": {
+    "group/media": {
+      "orientation": "horizontal",
+      "modules": [
+        "custom/media-animation",
+        "custom/media-now-playing",
+        "custom/media-time"
+      ]
+    },
+    "custom/media-now-playing": {
+      "exec": "~/.config/waybar/custom_modules/media/media-now-playing.sh",
+      "escape": true,
+      "tooltip": false,
+      "on-click": "playerctl play-pause",
+      "on-click-middle": "playerctl previous",
+      "on-click-right": "playerctl next",
+    },
+    "custom/media-animation": {
+      "exec": "~/.config/waybar/custom_modules/media/media-animation.sh",
+      "tooltip": false,
+    },
+    "custom/media-time": {
+      "exec": "~/.config/waybar/custom_modules/media/media-time.sh",
+      "escape": true,
+      "interval": 1,
+      "tooltip": false,
+    },
+
+"clock": {
     "timezone": "Asia/Kolkata",
-    "tooltip": false,
     "format": "{:%H:%M  -  %d, %A}",
-    "interval": 1
-  },
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
+    "calendar": {
+        "format": {
+            "today": "<span color='#99d1db'><b>{}</b></span>"
+        },
+        "mode": "month",
+        "mode-mon-col": 3,
+        "on-scroll": 1
+    },
+    "on-click": "firefox https://calendar.google.com"
+ },
 
   "network": {
     "format-wifi": "󰤢",
@@ -91,7 +134,7 @@
 
   "cpu": {
     "interval": 1,
-    "format": "  {usage:>2}%",
+    "format": " {usage:>2}%",
     "on-click": "kitty -e btop"
   },
 
