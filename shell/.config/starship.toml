@@ -27,6 +27,3 @@ style = "bg:#585b70 fg:#f9e2af"
 [character]
 success_symbol = "[❯](bold #a6e3a1)"
 error_symbol = "[❯](bold #f38ba8)"
-
-
-

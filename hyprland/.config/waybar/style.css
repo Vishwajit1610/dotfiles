@@ -146,7 +146,7 @@
 #battery {
   background-color: #1a1b26;
   padding: 0.3rem 0.7rem;
-  margin: 5px 0px;
+  margin: 2px 0px;
   border-radius: 0;
   box-shadow: none;
   min-width: 0;
@@ -210,6 +210,7 @@
   color: #888888;
   font-size: 16px;
 }
+
 #bluetooth.on {
   color: #2196f3;
 }

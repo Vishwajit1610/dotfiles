@@ -59,6 +59,7 @@
         "connected": "󰂱"
         },
     "on-click": "kitty -e bluetoothctl",
+    "tooltip": true,
     "tooltip-format-connected":"{device_enumerate}"
   },
 
@@ -134,7 +135,7 @@
 
   "cpu": {
     "interval": 1,
-    "format": " {usage:>2}%",
+    "format": " {usage}%",
     "on-click": "kitty -e btop"
   },
 
@@ -153,13 +154,13 @@
   },
 
   "backlight": {
-        "format": "{icon}  {percent}%",
+        "format": "{icon} {percent}%",
         "format-icons": ["","󰃜", "󰃛", "󰃞","󰃝","󰃟","󰃠"],
         "tooltip": false
   },
 
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon} {volume}%",
     "format-muted": "",
     "format-icons": {
       "default": ["", "", " "]
@@ -173,8 +174,8 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}  {capacity}%",
-        "format-full": "{icon}  {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
